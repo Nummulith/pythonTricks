@@ -1,69 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>NumberWizard</class>
- <widget class="QWizard" name="NumberWizard">
+ <class>Wizard</class>
+ <widget class="QWizard" name="Wizard">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>360</height>
+    <height>239</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Number Wizard</string>
+   <string>Wind Wizard</string>
   </property>
   <property name="wizardStyle">
    <enum>QWizard::ModernStyle</enum>
   </property>
   <widget class="QWizardPage" name="page1">
    <property name="title">
-    <string>Page 1</string>
+    <string>Load file</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="label1">
+     <widget class="QPushButton" name="on_push_Load">
       <property name="text">
-       <string>Введите число на странице 1:</string>
+       <string>Load</string>
       </property>
      </widget>
-    </item>
-    <item>
-     <widget class="QSpinBox" name="spinBoxWizard1"/>
     </item>
    </layout>
   </widget>
   <widget class="QWizardPage" name="page2">
    <property name="title">
-    <string>Page 2</string>
+    <string>Layer</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QLabel" name="label2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label1_2">
+        <property name="text">
+         <string>Layer index:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="LayerN">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="maximum">
+         <number>999999</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>R Pole</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="Rpole">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Tape</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="Band">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="on_push_Shell">
       <property name="text">
-       <string>Введите число на странице 2:</string>
+       <string>Shell</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QSpinBox" name="spinBoxWizard2"/>
+     <widget class="QPushButton" name="on_push_Coil">
+      <property name="text">
+       <string>Initial Coil</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
   <widget class="QWizardPage" name="page3">
    <property name="title">
-    <string>Page 3</string>
+    <string>Patterns</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
-     <widget class="QLabel" name="label3">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label3">
+        <property name="text">
+         <string>Number of wedges in the division of the full circle</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="Conv">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="set_Pattern">
       <property name="text">
-       <string>Введите число на странице 3:</string>
+       <string>Pattern</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QSpinBox" name="spinBoxWizard3"/>
+     <widget class="QPushButton" name="on_push_Coils">
+      <property name="text">
+       <string>Winding paths</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="on_push_Tape">
+      <property name="text">
+       <string>Tape</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="on_push_Continue">
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
